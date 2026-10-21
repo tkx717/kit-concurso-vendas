@@ -367,6 +367,13 @@ footer strong { color: var(--on-navy); }
 .plans .ticket .now { font-size: 64px; }
 .plans .ticket .now small { font-size: 26px; }
 
+.refund { display: flex; gap: 12px; align-items: flex-start; margin-top: 16px; padding: 14px 16px; border-radius: 12px; background: #dcfce7; color: #14532d; text-align: left; }
+.refund svg { width: 28px; height: 28px; flex: none; color: var(--go-dark); }
+.refund b { display: block; font-size: 16px; }
+.refund span { font-size: 14.5px; line-height: 1.4; }
+.ticket.pro .refund { background: rgba(34,197,94,.12); color: #d1fae5; }
+.ticket.pro .refund svg { color: #4ade80; }
+
 /* WhatsApp */
 .wa { position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 30; width: 58px; height: 58px; border-radius: 50%; background: var(--wa); color: #fff; display: grid; place-items: center; box-shadow: 0 10px 24px rgba(0,0,0,.25); text-decoration: none; }
 .wa svg { width: 30px; height: 30px; }
@@ -594,7 +601,8 @@ footer strong { color: var(--on-navy); }
         </div>
         <a class="btn block go js-checkout" data-plan="essencial" href="#oferta" target="_blank" rel="noopener">Quero o Essencial</a>
         <p class="notice js-notice" data-plan="essencial" hidden>Link de checkout ainda não configurado. Defina CONFIG.checkout no fim do arquivo.</p>
-        <div class="safe">Garantia de 7 dias · Pagamento seguro pela Cakto</div>
+        <div class="refund"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><div><b>Garantia de 7 dias</b><span>Não gostou? Peça o reembolso em até 7 dias e receba 100% do valor de volta.</span></div></div>
+        <div class="safe">Pagamento seguro pela Cakto</div>
       </div>
       <div class="ticket pro">
         <span class="flag">Mais completo</span>
@@ -616,7 +624,8 @@ footer strong { color: var(--on-navy); }
         </div>
         <a class="btn block gold js-checkout" data-plan="pro" href="#oferta" target="_blank" rel="noopener">Quero o PRO</a>
         <p class="notice js-notice" data-plan="pro" hidden>Link de checkout ainda não configurado. Defina CONFIG.checkoutPro no fim do arquivo.</p>
-        <div class="safe">Garantia de 7 dias · Pagamento seguro pela Cakto</div>
+        <div class="refund"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><div><b>Garantia de 7 dias</b><span>Não gostou? Peça o reembolso em até 7 dias e receba 100% do valor de volta.</span></div></div>
+        <div class="safe">Pagamento seguro pela Cakto</div>
       </div>
     </div>
   </div>
